@@ -1,11 +1,17 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, Directive } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { BasicHighlightDirective } from './directives/basic-highlight.directive';
+import { HostBindingDirective } from './directives/host-binding.directive';
+import { StructuralDirectiveDirective } from './directives/structural-directive.directive';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    BasicHighlightDirective,
+    HostBindingDirective,
+    StructuralDirectiveDirective
   ],
   imports: [
     BrowserModule
